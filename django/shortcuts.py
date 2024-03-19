@@ -61,7 +61,8 @@ def _get_queryset(klass):
         return klass._default_manager.all()
     return klass
 
-
+def make_toast():
+    return "toast"
 def get_object_or_404(klass, *args, **kwargs):
     """
     Use get() to return an object, or raise an Http404 exception if the object
